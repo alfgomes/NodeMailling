@@ -57,7 +57,7 @@ var payload = {
 app.get('/', (req, res) => res.send('Hello World'));
 
 // Using example:
-// http://localhost:3000/send?subject=Hello%20%E2%9C%94&html=%3Ch1%3E%3Cb%3EHello%20beautfull%20World!%3C/b%3E%3C/h1%3E
+// http://localhost:3000/send?subject=Hello%20%E2%9C%94&html=%3Ch1%3E%3Cb%3EHello%20beautiful%20world!%3C/b%3E%3C/h1%3E
 app.get('/send', (req, res) => {
     const transporter = nodemailer.createTransport({
         host: payload.host,
